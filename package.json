@@ -1,0 +1,39 @@
+{
+  "name": "fend-refresh-2019",
+  "version": "1.0.0",
+  "description": "Front End Nanodegree Content & Project Resources",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack --config webpack.dev.js && node src/server/index.js",
+    "build": "webpack --config webpack.prod.js",
+    "build-sw": "workbox generateSW"
+
+  },
+  "author": "Gabriel Varaljay",
+  "license": "ISC",
+  "keywords": [
+    "nlp",
+    "natural-language-processing",
+    "meaningcloud-api",
+    "web-tool",
+    "text-analysis"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^8.3.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "express": "^4.18.2",
+    "html-webpack-plugin": "^5.5.1",
+    "jest": "^27.4.3",
+    "sass-loader": "^10.4.1",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "workbox-webpack-plugin": "^6.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.1"
+  }
+}
